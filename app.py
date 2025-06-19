@@ -6,7 +6,7 @@ import seaborn as sns
 # Load preprocessed dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("players_with_clusters.csv")  # Make sure this file is in the same repo
+    return pd.read_csv("players_with_clusters1.csv")  # Make sure this file is in the same repo
 
 df = load_data()
 
