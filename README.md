@@ -84,5 +84,4 @@ streamlit run app.py
 
 Feel free to reach out with feedback or feature ideas!
 
-📧 your-email@example.com  
-🐦 [@yourhandle](https://twitter.com/yourhandle)
+
