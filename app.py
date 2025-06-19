@@ -33,8 +33,9 @@ if player_name:
         
         # Show similar players
         st.subheader("🧩 Players in the Same Cluster:")
-        similar = df[(df["Cluster"] == cluster) & (df["Player"] != selected["Player"])]
-        st.dataframe(similar[["Player", "Nation", "Pos", "Age", "G+A_90", "xG_90", "xAG_90"]].reset_index(drop=True))
+        similar = df[(df["Cluster"] == cluster) &(df["Player"] != selected["Player"]) &
+    (df["Pos"] == selected["Pos"])  
+]        st.dataframe(similar[["Player", "Nation", "Pos", "Age", "G+A_90", "xG_90", "xAG_90"]].reset_index(drop=True))
 
         # --- Optional: PCA Plot ---
         st.subheader("📈 PCA Cluster Plot")
